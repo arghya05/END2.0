@@ -1,4 +1,4 @@
-# END2 Session 1 Assignment by Sachin Dangayach
+# END2 Session 1 Assignment
 
 ## Background & Very Basics
 
