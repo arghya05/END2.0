@@ -10,8 +10,8 @@
 2. You must upload your assignment to a public GitHub Repository and share the link as the submission to this assignment
 
 Solution: -
-**Link to cloab file**
-https://colab.research.google.com/drive/1yQxqQXFwAdbpG_T6V-uazKC0T2WOP-7V
+**Link to** [cloab file](https://colab.research.google.com/drive/1yQxqQXFwAdbpG_T6V-uazKC0T2WOP-7V)
+**Link to file in** [git](https://github.com/SachinDangayach/END2.0/blob/main/Session1/END2_0_Session_1.ipynb)
 
 3. Add a readme file to your project and describe these things:
   - What is a neural network neuron?
@@ -24,4 +24,3 @@ https://colab.research.google.com/drive/1yQxqQXFwAdbpG_T6V-uazKC0T2WOP-7V
   - Ans:
   - What is the "chain rule" in gradient flow
   - Ans:
-![alt text](https://github.com/SachinDangayach/TSAI_EVA5/blob/master/session13/session13_A/IMG_0013_BB.jpg)
