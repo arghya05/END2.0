@@ -19,11 +19,9 @@
 
 ### Explain each major step
 
-## Solution:
-***NN parameters, activation function output and loss calculation***
-
+## Solution:  
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/NN.png)
-
+***NN parameters, activation function output and loss calculation***
 h1 = w1 * i1+w2 * i2  
 h2 = w3 * i1+w4 * i2  
 a_h1 = σ(h1) = 1/(1+exp(-h1))  
@@ -65,6 +63,7 @@ Substituting x, y in (1)
 ∂E_T/∂w1 = ((a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7) *   (a_h1 * ( 1 – a_h1)  ) * i1  
 Or  
 ***∂E_T/∂w1 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i1***    
+Similarly,  
 8.	***∂E_T/∂w2 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i2***      
 9.	***∂E_T/∂w3 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i1***    
 10.	***∂E_T/∂w4 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i2***    
