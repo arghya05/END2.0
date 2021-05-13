@@ -10,7 +10,7 @@
 ## Solution:
   - Screenshot of excel -
 
-  ![alt](https://i.stack.imgur.com/wXL9A.png)
+  ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/Excel_NN.JPG)
 
   - Excel file must be there for us to cross-check the image shown on readme (no image = no score)
 
@@ -22,7 +22,7 @@
 ## Solution:
 ***NN parameters, activation function output and loss calculation***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/NN.PNG)
 
 h1 = w1 * i1+w2 * i2
 h2 = w3 * i1+w4 * i2
@@ -81,24 +81,24 @@ Or
 ## Solution:
 ***Learning Rate = 0.1***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/lr_01.JPG)
 
 ***Learning Rate = 0.2***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/lr_02.JPG)
 
 ***Learning Rate = 0.5***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_05.JPG)
 
 ***Learning Rate = 0.8***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_08.JPG)
 
 ***Learning Rate = 1***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_1.JPG)
 
 ***Learning Rate = 2***
 
-![alt](https://i.stack.imgur.com/wXL9A.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_2.JPG)
