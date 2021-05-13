@@ -51,7 +51,7 @@ Similarly -
 ∂o1/∂a_h1 = ∂(w5 * a_h1+w6 * a_h2) /∂a_h1 = w5   ----o  
 Substituting m, n, o in l  
 ∂E1/∂a_h1 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 --- x  
-Similarly,  
+Similarly -    
 ∂E2/∂a_h1 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7  ---- y  
 Substituting x, y in (1)  
 ***∂E_T/∂a_h1 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7***  
@@ -63,7 +63,7 @@ Substituting x, y in (1)
 ∂E_T/∂w1 = ((a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7) *   (a_h1 * ( 1 – a_h1)  ) * i1  
 Or  
 ***∂E_T/∂w1 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i1***    
-Similarly,  
+Similarly -    
 8.	***∂E_T/∂w2 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i2***      
 9.	***∂E_T/∂w3 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i1***    
 10.	***∂E_T/∂w4 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i2***    
