@@ -21,7 +21,7 @@
 
 ## Solution:  
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/NN.png)
-***NN parameters, activation function output and loss calculation***
+***NN parameters, activation function output and loss calculation***  
 h1 = w1 * i1+w2 * i2  
 h2 = w3 * i1+w4 * i2  
 a_h1 = σ(h1) = 1/(1+exp(-h1))  
