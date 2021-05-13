@@ -44,11 +44,11 @@ Now, ∂E1/∂a_o1 = (t1 - a_o1) * (-1) = a_o1 – t1   ---- x
 
 Substituting x, y and z in (1)  
 
-∂E_T/∂w5 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h1)  
+***∂E_T/∂w5 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h1)***
 Similarly -  
-2.	∂E_T/∂w6 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h2)  
-3.	∂E_T/∂w7 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h2)  
-4.	∂E_T/∂w8 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h1)  
+2.	***∂E_T/∂w6 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h2)***  
+3.	***∂E_T/∂w7 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h2)***  
+4.	***∂E_T/∂w8 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h1)***  
 
 5.	∂E_T/∂a_h1 = ∂(E1+E2)/∂a_h1 = ∂E1/∂a_h1 + ∂E2/∂a_h1  ---- (1)  
 ∂E1/∂a_h1 = ∂E1/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂a_h1  ----l  
@@ -60,9 +60,9 @@ Substituting m, n, o in l
 Similarly,  
 ∂E2/∂a_h1 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7  ---- y  
 Substituting x, y in (1)  
-∂E_T/∂a_h1 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7  
+***∂E_T/∂a_h1 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7***  
 
-6.	∂E_T/∂a_h2 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w8 + (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w6  
+6.	***∂E_T/∂a_h2 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w8 + (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w6***  
 
 7.	∂E_T/∂w1 = ∂E_T/∂a_h1 * ∂a_h1/∂h1 * ∂h1/∂w1 ---- (1)  
 ∂a_h1/∂h1 = a_h1 * ( 1 – a_h1)  -----x  
@@ -70,35 +70,35 @@ Substituting x, y in (1)
 Substituting x, y in (1)  
 ∂E_T/∂w1 = ((a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7) *   (a_h1 * ( 1 – a_h1)  ) * i1  
 Or  
-∂E_T/∂w1 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i1  
-8.	∂E_T/∂w2 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i2  
-9.	∂E_T/∂w3 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i1  
-10.	∂E_T/∂w4 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i2  
+***∂E_T/∂w1 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i1***    
+8.	***∂E_T/∂w2 = ∂E_T/∂a_h1 * (a_h1 * ( 1 – a_h1)  ) * i2***      
+9.	***∂E_T/∂w3 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i1***    
+10.	***∂E_T/∂w4 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i2***    
 
 
-- Show what happens to the error graph when you change the learning rate from [0.1, 0.2, 0.5, 0.8, 1.0, 2.0]  
+###Show what happens to the error graph when you change the learning rate from [0.1, 0.2, 0.5, 0.8, 1.0, 2.0]###
 
 ## Solution:  
-***Learning Rate = 0.1***
+***Total Loss per epoch for Learning Rate = 0.1***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/lr_01.JPG)
 
-***Learning Rate = 0.2***
+***Total Loss per epoch for Learning Rate = 0.2***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/lr_02.JPG)
 
-***Learning Rate = 0.5***
+***Total Loss per epoch for Learning Rate = 0.5***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_05.JPG)
 
-***Learning Rate = 0.8***
+***Total Loss per epoch for Learning Rate = 0.8***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_08.JPG)
 
-***Learning Rate = 1***
+***Total Loss per epoch for Learning Rate = 1***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_1.JPG)
 
-***Learning Rate = 2***
+***Total Loss per epoch for Learning Rate = 2***
 
 ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session2/Images/LR_2.JPG)
