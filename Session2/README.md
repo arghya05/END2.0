@@ -36,20 +36,16 @@ E1 = ½ * (t1-a_o1)²
 E2 = ½ * (t2-a_o2)²  
 
 ***Partial Derivation on total loss wrt Weights of network***
-
 1.	∂E_T/∂w5 = ∂(E1+E2)/∂w5 = ∂E1/∂w5 = (∂E1/∂a_o1) * (∂a_o1/∂o1) * (∂o1/∂w5)  ---- (1)  
 Now, ∂E1/∂a_o1 = (t1 - a_o1) * (-1) = a_o1 – t1   ---- x  
 ∂a_o1/∂o1 = ∂(σ(o1))/ ∂o1 = σ(o1) * (1 - σ(o1)) = a_o1 * (1 – a_o1)   ---- y  
 ∂o1/∂w5 = ∂(w5 * a_h1+w6 * a_h2)/ ∂w5 = a_h1  ---- z  
-
 Substituting x, y and z in (1)  
-
-***∂E_T/∂w5 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h1)***
+***∂E_T/∂w5 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h1)***  
 Similarly -  
 2.	***∂E_T/∂w6 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * (a_h2)***  
 3.	***∂E_T/∂w7 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h2)***  
 4.	***∂E_T/∂w8 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * (a_h1)***  
-
 5.	∂E_T/∂a_h1 = ∂(E1+E2)/∂a_h1 = ∂E1/∂a_h1 + ∂E2/∂a_h1  ---- (1)  
 ∂E1/∂a_h1 = ∂E1/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂a_h1  ----l  
 ∂E1/∂a_o1 = a_o1 – t1   ---- m  
@@ -61,9 +57,7 @@ Similarly,
 ∂E2/∂a_h1 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7  ---- y  
 Substituting x, y in (1)  
 ***∂E_T/∂a_h1 = (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w5 + (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w7***  
-
 6.	***∂E_T/∂a_h2 = (a_o2 – t2) * (a_o2 * (1 – a_o2)) * w8 + (a_o1 – t1) * (a_o1 * (1 – a_o1)) * w6***  
-
 7.	∂E_T/∂w1 = ∂E_T/∂a_h1 * ∂a_h1/∂h1 * ∂h1/∂w1 ---- (1)  
 ∂a_h1/∂h1 = a_h1 * ( 1 – a_h1)  -----x  
 ∂h1/∂w1 = i1 ---- y  
@@ -75,8 +69,7 @@ Or
 9.	***∂E_T/∂w3 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i1***    
 10.	***∂E_T/∂w4 = ∂E_T/∂a_h2 * (a_h2 * ( 1 – a_h2)  ) * i2***    
 
-
-###Show what happens to the error graph when you change the learning rate from [0.1, 0.2, 0.5, 0.8, 1.0, 2.0]###
+***Show what happens to the error graph when you change the learning rate from [0.1, 0.2, 0.5, 0.8, 1.0, 2.0]***  
 
 ## Solution:  
 ***Total Loss per epoch for Learning Rate = 0.1***
