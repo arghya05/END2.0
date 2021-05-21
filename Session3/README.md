@@ -41,7 +41,7 @@ Design choices we made while building the network:
 
 
 The summary of the network looks like this:  
-![Model Summary](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/Model%20Parameters.jpg)
+![Model Summary](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/Model%20Parameters.jpg)
 
 
 
@@ -71,16 +71,16 @@ Training Logs
 
 
 Training Loss By Epochs  
-![Chart - Training Losses by Epochs](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/training_loss_by_epochs.png)
+![Chart - Training Losses by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/training_loss_by_epochs.png)
 
 
 Digit Recognition Accuracy By Epochs  
-![Chart - Digit Recognition Accuracy by Epochs](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/test_acc_by_epochs_dra.png)
+![Chart - Digit Recognition Accuracy by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/test_acc_by_epochs_dra.png)
 
 
 Addition Accuracy By Epochs  
-![Chart - Addition Accuracy by Epochs](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/test_acc_by_epochs_aa.png)
+![Chart - Addition Accuracy by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/test_acc_by_epochs_aa.png)
 
 
 Training Loss By Batch Iterations  
-![Chart - Training Losses by Epochs](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/training_loss_by_batch_iterations.png)
+![Chart - Training Losses by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/training_loss_by_batch_iterations.png)
