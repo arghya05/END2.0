@@ -41,7 +41,8 @@ The network we decided to build is designed as follows:
 Also, we have used the glove pre trained embeddings here by loading the pretrained embeddings weight to embeddings layer. We didn't free this layer at let the gradient to flow till this layer.
 
 The summary of the network looks like this:  
-![Model Summary](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/model1.png)
+
+![Model Summary](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/model1.PNG)
 
 
 # The Network / Model - Loss Function
@@ -63,8 +64,8 @@ Train Test Loss and Accuracy plots
 
 Model results on random text
 
-![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/Manual_results.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/Manual_results.PNG)
 
 Model results of test dataset
 
-![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/TestDataset.png)
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/TestDataset.PNG)
