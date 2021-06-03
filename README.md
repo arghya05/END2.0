@@ -2,4 +2,6 @@
 
 ## Session 1: [Background & Very Basics](https://github.com/SachinDangayach/END2.0/tree/main/Session1)
 ## Session 2: [BackProp, Embeddings and Language Models](https://github.com/SachinDangayach/END2.0/tree/main/Session2)
-## Session 2: [PyTorch](https://github.com/SachinDangayach/END2.0/tree/main/Session3)
+## Session 3: [PyTorch](https://github.com/SachinDangayach/END2.0/tree/main/Session3)
+## Session 4: [RNNs & LSTMs](https://github.com/SachinDangayach/END2.0/tree/main/Session4)
+## Session 5: [First Hands-on](https://github.com/SachinDangayach/END2.0/tree/main/Session5)
