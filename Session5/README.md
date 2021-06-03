@@ -19,67 +19,49 @@ We aim to build a network that would:
 
 - StanfordSentimentAnalysis is a popular dataset used for benchmarking NLP related models. It comprises of movies reviews and sentiments associated with reviews manually labeled for nearly 25 classes. We decided to go for total five labels ["very negative", "negative", "neutral", "positive", "very positive"].
 - Dataset has got train, test split of (8544, 2210). On exploring the dataset, it was found to be imbalanced dataset.
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/imbalance.png)
 
-
+- We created methods to augment the dataset as well as convert the dataset into a balanced dataset.
+  - Augmentation methods
+  - random_swap: The random swap augmentation takes a sentence and then swaps words within it n times, with each iteration working on the previously swapped sentence. Here we sample two random numbers based on the length of the sentence, and then just keep swapping until we hit n.
+  - random_delete: As the name suggests, random deletion deletes words from a sentence. Given a probability parameter p, it will go through the sentence and decide whether to delete a word or not based on that random probability. Consider of it as pixel dropouts while treating images.
+  - random_insert: A random insertion technique looks at a sentence and then randomly inserts synonyms of existing non-stopwords into the sentence n times. Assuming you have a way of getting a synonym of a word and a way of eliminating stopwords (common words such as and, it, the, etc.)
+  - back_translate: This method uses google translations to first translate the text to random language and then translate it back to English and while doing so we see change in the text while the meaning is preserved. There is a catch here while calling this method is google allows around 450 apis calls only and afterward it blocks the api call. Hence this method couldn't be used for generating good amount of text.
+  - Finally we augmented the train dataset to 17114 records while converting it to almost balanced dataset.
+  ![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/balance.png)
 
 # The Network / Model - Architecture
 
 The network we decided to build is designed as follows:
-1. Two convolutions with pooling applied to feature map
-2. Dropout layer
-3. Six fully connected layers leading to the two outputs - recognized digit & addition result
+1. We have got embeddings layer with input dimension as vocab size (~15K) and embeddings dimension of 100.
+2. We used bidirectional RNN ( GRU) with 2 layers with input as embeddings from embeddings layer and hidden layer with 256 dimensions
+3. Dropout with (p= 0.3)
+4. Fully connected layer with input dimension as 512 (2 * hidden layer as its bidirectional RNN) and output of 5 dimension.
 
-Design choices we made while building the network:
-1. The network would have 2 main components:
-  a. For digit recognition
-  b. For adding the digit to the random number
-2. Once we have the output from component (a), we would concatenate the one-hot encoded random number to the output
-3. The final output would contain:
-  a. A vector of 10 number giving the probabilities of the image being 0 to 9
-  b. A vector of 19 numbers giving the probabilities of the addition being 0 to 18
-
+Also, we have used the glove pre trained embeddings here by loading the pretrained embeddings weight to embeddings layer. We didn't free this layer at let the gradient to flow till this layer.
 
 The summary of the network looks like this:  
-![Model Summary](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/Model%20Parameters.jpg)
-
+![Model Summary](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/balance.png)
 
 
 # The Network / Model - Loss Function
 
-We went ahead with the Negative Log Likelihood loss as that is known to give good results for comparing outputs for classification problems like this one.
-
-Yes, we set it up as a classification problem mainly because:
-  a. Digit recognition is involved
-  b. The summations are constrained within the range of 0 to 18, with the input combinations being finite
-
-
+We went ahead with the cross entropy loss with Adam optimizer with learning rate of 1e-5 for 80 epochs and then 1e-4 for next 20 epochs
 
 # The training
 
-Inspired by YOLO, we wanted to train the network for digit recognition for the first few epochs and then
-after it achieves certain level of accuracy, train it for the addition / summation objective
+Trained the model for 100 epochs. Model started overfitting in most of the experiments.
 
-### ACCURACY ACHIEVED - 97.75%
-To our surprise, the network does not take more than a few epochs to achieve an ~ 98% accuracy
+### ACCURACY ACHIEVED - 43.64%
+Tried multiple experiment by couldn't get more than test 45% accuracy.
 
-Here are the loss and accuracy charts from training the network:
-
-
-Training Logs  
-![Training Logs Screenshot](https://github.com/sairamsubramaniam/tsai_nlp/blob/master/end_course_v2/3_nn_practice/images/training_logs.png)
+Train Test Loss and Accuracy plots  
+![Accuracy and Loss plots](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/loss_acc.png)
 
 
-Training Loss By Epochs  
-![Chart - Training Losses by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/training_loss_by_epochs.png)
+### Model results on manually / test dataset
+Model results on random text
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/Manual_results.png)
 
-
-Digit Recognition Accuracy By Epochs  
-![Chart - Digit Recognition Accuracy by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/test_acc_by_epochs_dra.png)
-
-
-Addition Accuracy By Epochs  
-![Chart - Addition Accuracy by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/test_acc_by_epochs_aa.png)
-
-
-Training Loss By Batch Iterations  
-![Chart - Training Losses by Epochs](https://github.com/SachinDangayach/END2.0/blob/main/Session3/images/training_loss_by_batch_iterations.png)
+Model results of test dataset
+![alt](https://github.com/SachinDangayach/END2.0/blob/main/Session5/Images/TestDataset.png)
