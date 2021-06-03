@@ -2,7 +2,7 @@
 ### Submission by:
 1. Sachin Dangayach (sachin.dangayach@gmail.com)
 
-[Here is the notebook where training was done](https://colab.research.google.com/drive/13-mpSe80XXG69Pz3y1SOP7HQmekAyggw?usp=sharing)
+***[Link for colab file](https://colab.research.google.com/drive/13-mpSe80XXG69Pz3y1SOP7HQmekAyggw?usp=sharing)***
 
 # Objective
 
@@ -17,10 +17,8 @@ We aim to build a network that would:
 
 # Data
 
-- The network would use the MNIST dataset to train images to recognize handwritten digits
-- We would also randomly append a number between 0 to 9 to each of the image in MNIST to train the model for addition
-- This also means, we would append the sum of the number in the image (data label) and the newly added random number, as the second "label" in the dataset
-- The random number would be converted into a one-hot encoded vector while training / prediction
+- StanfordSentimentAnalysis is a popular dataset used for benchmarking NLP related models. It comprises of movies reviews and sentiments associated with reviews manually labeled for nearly 25 classes. We decided to go for total five labels ["very negative", "negative", "neutral", "positive", "very positive"].
+- Dataset has got train, test split of (8544, 2210). On exploring the dataset, it was found to be imbalanced dataset.
 
 
 
